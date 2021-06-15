@@ -1,0 +1,380 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Falacies
+{% endblock %}
+
+{% block main %}
+
+<h3>Falacies</h3>
+
+<div class="text">
+    <p>And so you think, do you, that the chief use of Logic,
+        in real life, is to deduce Conclusions from workable
+        Premisses, and to satisfy yourself that the Conclusions,
+        deduced by other people, are correct ? I only wish it
+        were! Society would be much less liable to panics
+        and other delusions, and <b><i>political</i></b> life, especially, would
+        be a totally different thing, if even a majority of the
+        arguments, that are scattered broadcast over the world,
+        were correct! But it is all the other way, I fear. For
+        one workable Pair of Premisses ( I mean a Pair that lead
+        to a logical Conclusion) that you meet with in reading
+        your newspaper or magazine, you will probably find
+        <b><i>five</i></b> that lead to no Conclusion at all: and, even when
+        the Premisses <b><i>are</i></b> workable, for <b><i>one</i></b> instance, where
+        the writer draws a correct Conclusion, there are probably
+        <b><i>ten</i></b> where he draws an incorrect one.</p>
+
+        <p>In the  <b><i>first case</i></b>, you may say "the <b><i>Premisses</i></b> are
+            fallacious": in the  <b><i>second</i></b>, "the <b><i>Conclusion</i></b> is fallacious."</p>
+
+        <p>The chief use you will find, in such Logical skill
+            as this Game may teach you, will be in detecting
+            <b>'Fallacies'</b> of these two kinds.</p>
+
+        <p>The <b><i>first kind of Fallacy</i></b> - 'Fallacious Premisses' -
+                <b style="color:red;">you will detect when, after marking them on the larger
+                Diagram, you try to transfer the marks to the smaller</b>.
+                You will take its four compartments, one by one, and
+                ask, for each in turn, "What mark can I place here ?";
+                and in every one the answer will be "No information!",
+                showing that there is no Conclusion at all. For instance,</p>
+
+        <p class="examples"><b>" All soldiers are brave; <br>
+            Some Englishmen are brave. <br>
+            Some Englishmen are soldiers."</b></p>
+
+        <p>looks uncommonly <b><i>like</i></b> a Syllogism, and might easily
+                take in a less experienced Logician. But <b><i>you</i></b> are
+                not to be caught by such a trick! You would simply
+                set out the <b><i>Premisses</i></b>, and would then calmly remark
+                "Fallacious Premisses!": you wouldn't condescend to
+                ask what <b><i>Conclusion</i></b> the writer professed to draw -
+                knowing that, <b><i>whatever</i></b> it is, it <b><i>must</i></b> be wrong. You
+                would be just as safe as that wise mother was, who
+                said "Mary, just go up to the nursery, and see what
+                Baby's doing, and <b><i>tell him not to do it!</i></b>"</p>
+
+        <p>The other kind of Fallacy - 'Fallacious Conclusion' -
+                you will not detect till you have marked <b><i>both</i></b>
+                Diagrams, and have read off the correct Conclusion,
+                and have compared it with the Conclusion which the
+                writer has drawn.</p>
+
+        <p>But mind, you mustn't say <b><i>"Fallacious Conclusion</i></b>,"
+                simply because it is not <b><i>identical</i></b> with the correct
+                one: it may be a <b><i>part</i></b> of the correct Conclusion, and
+                so be quite correct, <b><i>as far as it goes</i></b>. In this case you
+                would merely remark, with a pitying smile, "<b><i>Defective</i></b>
+                Conclusion !" Suppose, for example, you were to meet
+                with this Syllogism:</p>
+
+        <p class="examples"><b>All unselfish people are generous; <br>
+                No misers are generous. <br>
+                No misers are unselfish,"</b></p>
+
+        <p>the Premisses of which might be thus expressed in letters:</p>
+
+        <p class="examples"><b>"All x' are m; <br>
+            No y are m."</b></p>
+
+        <p>Here the correct Conclusion would be " All x' are y' "
+                (that is, "All unselfish people are not misers"),</p>
+</div>
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" ></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="blue"></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" ></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+
+        <path  class="n15" d="M  2  154
+                h  75
+                v  75
+                h  75
+                v  75
+                h  -150
+                Z" fill="blue"></path>
+
+        <path  class="n13" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" fill="blue"></path>
+
+        <path  class="n16" d="M  229  154
+                h  75
+                v  150
+                h  -150
+                v  -75
+                h  75
+                Z" fill="blue"></path>
+
+        <path  class="n14" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" fill="green"></path>
+    </svg>
+</div>
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path  class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title=""></path>
+
+        <path  class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title=""></path>
+
+        <path  class="n7" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" fill="blue"></path>
+
+        <path  class="n8" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" fill="green"></path>
+    </svg>
+</div>
+
+
+<div class="text">
+        <p>while the Conclusion, drawn by the writer, is " No y are x', "
+                (which is the same as " No x' are y," and so is part of
+                " All x' are y' ")</p>
+</div>
+
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" ></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="blue"></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" ></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+
+        <path  class="n15" d="M  2  154
+                h  75
+                v  75
+                h  75
+                v  75
+                h  -150
+                Z" fill="blue"></path>
+
+        <path  class="n13" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" fill="blue"></path>
+
+        <path  class="n16" d="M  229  154
+                h  75
+                v  150
+                h  -150
+                v  -75
+                h  75
+                Z" fill="blue"></path>
+
+        <path  class="n14" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path  class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title=""></path>
+
+        <path  class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title=""></path>
+
+        <path  class="n7" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" fill="blue"></path>
+
+        <path  class="n8" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+<div class="text">
+        <p>Here you would simply say "<b><i>Defective</i></b>
+                Conclusion!" The same thing would happen, if you were
+                in a confectioner's shop, and if a little boy were to come
+                in, put down twopence, and march off triumphantly with
+                a single penny-bun. You would shake your head mournfully,
+                and would remark "Defective Conclusion ! Poor
+                little chap!" And perhaps you would ask the young
+                lady behind the counter whether she would let you eat
+                the bun, which the little boy had paid for and left
+                behind him: and perhaps she would reply "Sha'n't!"</p>
+
+        <p>But if, in the above example, the writer had drawn
+                the Conclusion "All misers are selfish" (that is, " All
+                y are x "),</p>
+</div>
+
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path  class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title="" fill="green"></path>
+
+        <path  class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title=""></path>
+
+        <path  class="n7" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" fill="blue"></path>
+
+        <path  class="n8" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+
+<div class="text">
+        <p>this would be going beyond his legitimate
+                rights (since it would assert the existence of y, which
+                is not contained in the Premisses), and you would
+                very properly say "Fallacious Conclusion!"</p>
+
+        <p>Now, when you read other treatises on Logic, you
+                will meet with various kinds of (so-called) 'Fallacies',
+                which are by no means <b><i>always</i></b> so. For example, if
+                you were to put before one of these Logicians the
+                Pair of Premisses</p>
+
+        <p class="examples"><b>"No honest men cheat; <br>
+            No dishonest men are trustworthy."</b></p>
+
+        <p>and were to ask him what Conclusion followed, he would
+                probably say "None at all! Your Premisses offend
+                against two distinct Rules, and are as fallacious as
+                they can well be!" Then suppose you were bold
+                enough to say "The Conclusion is 'No men who cheat
+                are trustworthy'," I fear your Logical friend would
+                turn away hastily perhaps angry, perhaps only scornful:
+                in any case, the result would be unpleasant.
+                <b><i>I advise you not to try the experiment !</i></b></p>
+
+        <p>But why is this ? "you will say." Do you mean
+                to tell us that all these Logicians are wrong ? "Far
+                from it, dear Reader! From their point of view, they
+                are perfectly right. But they do not include, in their
+                system, anything like all the possible forms of Syllogism.</p>
+
+
+        <p>They have a sort of nervous dread of Attributes
+                beginning with a negative particle. For example,
+                such Propositions as "All not-x are y" " No x are
+                not-y," are quite outside their system. And thus,
+                having (from sheer nervousness) excluded a quantity
+                of very useful forms, they have made rules which, though
+                quite applicable to the few forms which they allow of,
+                are no use at all when you consider all possible forms.</p>
+
+        <p>Let us not quarrel with them, dear Reader! There
+                is room enough in the world for both of us. Let us
+                quietly take our broader system: and, if they choose
+                to shut their eyes to all these useful forms, and to
+                say "They are not Syllogisms at all !" we can but
+                stand aside, and let them Rush upon their Fate! There
+                is scarcely anything of yours, upon which it is so
+                dangerous to Rush, as your Fate. You may Rush upon
+                your Potato-beds, or your Strawberry-beds, without
+                doing much harm: you may even Rush upon your
+                Balcony (unless it is a new house, built by contract,
+                and with no clerk of the works) and may survive
+                the foolhardy enterprise: but if you once Rush upon
+                your Fate - why, you must take the consequences!</p>
+</div>
+
+
+
+
+
+{% endblock %}

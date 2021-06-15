@@ -1,0 +1,889 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Syllogisms
+{% endblock %}
+
+{% block main %}
+
+<h3>Syllogisms</h3>
+
+<h4 style="color: green">GREEN -> One or More</h4>
+<h4 style="color: blue">BLUE -> Empty</h4>
+<h4 style="color: yellow">YELLOW -> division-line</h4>
+<h4 style="color: #DDD">GREY -> not marked</h4>
+
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" ></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" ></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+
+        <path  class="n15" d="M  2  154
+                h  75
+                v  75
+                h  75
+                v  75
+                h  -150
+                Z" ></path>
+
+        <path  class="n13" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path  class="n16" d="M  229  154
+                h  75
+                v  150
+                h  -150
+                v  -75
+                h  75
+                Z" ></path>
+
+        <path  class="n14" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path  class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title=""></path>
+
+        <path  class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title=""></path>
+
+        <path  class="n7" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path  class="n8" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+<br>
+<br>
+
+<div class="text">
+    <p>Now suppose we divide our Universe of Things in
+        three ways, with regard to three different Attributes.
+        Out of these three Attributes, we may make up three
+        different couples (<b>for instance</b>, if they were a, b, c, we
+        might make up the three couples ab, ac, be). Also
+        suppose we have two Propositions given us, containing
+        two of these three couples, and that from them we
+        can prove a third Proposition containing the third
+        couple. (For example, if we divide our Universe for
+        m, x, and y; and if we have the two Propositions
+        given us, " no <b>m</b> are <b>x'</b> " and " all <b>m'</b> are <b>y</b> " containing
+        the two couples <b>m x</b> and <b>m y</b>, it might be possible
+        to prove from them a <b style="color:red;">third Proposition</b>, containing
+        <b>x</b> and <b>y</b>.)</p>
+
+        <p>In such a case we call the given Propositions <b style="color:red;">'the
+            Premisses'</b>, the third one <b style="color:red;">'the Conclusion'</b> and the
+            whole set <b style="color:red;">'a Syllogism'</b>.</p>
+
+        <p style="color:DodgerBlue;">Evidently, one of the Attributes must occur in both
+                Premisses; or else one must occur in one Premiss, and
+                its contradictory in the other.</p>
+
+        <p>In the first case (when, for example, the Premisses
+            are " some m are x " and " no m are y' " ) the Term,
+            which occurs twice, is called <b style="color:red;">"the Middle Term"</b>,
+            because it serves as a sort of link between the other
+            two Terms.
+
+        <p>In the second case (when, for example, the Premisses
+            are " no m are x' " and "all m' are y ") the two Terms,
+            which contain these contradictory Attributes, may be
+            called <b style="color:red;">"the Middle Terms"</b>.</p>
+
+        <p>Thus, in the first case, the class of " <b>m</b>-Things " is
+            the Middle Term; and, in the second case, the two
+            classes of " <b>m</b>-Things " and " <b>m'</b>-Things " are the Middle
+            Terms.</p>
+
+        <p><b><i>The Attribute, which occurs in the Middle Term
+            or Terms, disappears in the Conclusion, and is said to
+            be "eliminated", which literally means "turned out
+            of doors".</i></b></p>
+
+        <p>Now let us try to draw a Conclusion from the two
+            Premisses:</p>
+
+            <p class="examples"><b>"Some red Apples are unwholesome ;<br>
+                No ripe Apples are unwholesome."</b></p>
+
+        <p><b><i>In order to express them with Counters</i></b>, we need to
+            divide Apples in three different ways, with regard to
+            redness, to ripeness, and to wholesomeness. For this
+            we must use the larger Diagram, making <b>x</b> mean
+            "red" , <b>y</b> "ripe", and <b>m</b> "wholesome".
+            (Everything inside <b><i>the central Square</i></b> is supposed to have the attribute
+                <b>m</b>, and everything outside it the attribute <b>m'</b>,
+                that is, <b>"not-m"</b>.)</p>
+
+        <p><b style="color:red;">You had better adopt the rule of making m mean
+            the Attribute which occurs in the Middle Term or
+            Terms.</b> (I have chosen <b>m</b> as the symbol, because
+            'middle' begins with <b>m</b>.)</p>
+
+        <p>Now, <b>in representing the two Premisses</b>, I prefer
+            <b style="color:red;"><i>to begin with the negative one</i></b> (the one beginning
+            with <b>"no"</b>), because <b style="color:blue;">blue Counters</b>
+            <i>can always be placed with certainty</i>,
+            and will then <i>help to fix the
+            position</i> of the <b style="color:green;">green Counters</b>,
+            which are sometimes a
+            little uncertain where they will be most welcome.</p>
+
+        <p>Let us express, then, "no ripe Apples are unwholesome
+            (Apples)", i.e. "no <b>y</b>-Apples are <b>m'</b>-(Apples)".
+            This tells us that none of the Apples belonging to the
+            <b>y</b>-half of the cupboard are in its <b>m'</b>-compartments (i. e.
+            the ones outside the central Square). Hence the two
+            compartments, <b>No. 9</b> and <b>No. 15</b>, are both 'empty';
+            and we must place a <b style="color:blue;">blue Counter</b> in each of them,
+            thus:</p>
+</div>
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" fill="blue"></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" ></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+
+        <path  class="n15" d="M  2  154
+                h  75
+                v  75
+                h  75
+                v  75
+                h  -150
+                Z" fill="blue"></path>
+
+        <path  class="n13" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path  class="n16" d="M  229  154
+                h  75
+                v  150
+                h  -150
+                v  -75
+                h  75
+                Z" ></path>
+
+        <path  class="n14" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+<br>
+<br>
+
+<div class="text">
+    <p>We have now to express the other Premiss, namely,
+        "some red Apples are unwholesome (Apples)", i . e.
+        "some <b>x</b>-Apples are <b>m'</b>-(Apples) This tells us that
+        some of the Apples in the <b>x</b>-half of the cupboard are
+        in its <b>m'</b>-compartments. Hence one of the two compartments,
+        <b>No. 9</b> and <b>No. 10</b>, is 'occupied': and, as we are
+        not told in which of these two Compartments to place
+        the <b style="color:green;">green Counter</b>, the usual rule would be to lay it on
+        the <b><i>division-line</i></b> (<b style="color:yellow;">yellow Counter</b> marking both compartments): but, in this case, the
+        other Premiss has settled the matter for us, by declaring
+        <b>No. 9</b> to be empty. Hence the <b style="color:green;">green Counter</b> has
+        no choice, and must go into <b>No. 10</b>, thus:</p>
+</div>
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" fill="blue"></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" fill="green"></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+
+        <path  class="n15" d="M  2  154
+                h  75
+                v  75
+                h  75
+                v  75
+                h  -150
+                Z" fill="blue"></path>
+
+        <path  class="n13" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path  class="n16" d="M  229  154
+                h  75
+                v  150
+                h  -150
+                v  -75
+                h  75
+                Z" ></path>
+
+        <path  class="n14" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+<br>
+<br>
+
+
+<div class="text">
+    <p style="color:DodgerBlue;"><i>And now what Counters will all this information
+        enable us to place in the <b>smaller Diagram</b>, so as to
+        get some Proposition involving <b>x</b> and <b>y</b> only, leaving
+        out <b>m</b> ?</i> Let us take its four compartments, one by one.</p>
+
+    <p><i>First</i>, <b>No. 5</b>. All we know about this is that its
+        <b>outer portion is empty</b>: but <b>we know nothing about
+        its inner portion</b>. Thus the Square may be empty,
+        or it may have something in it. Who can tell ? So
+        we dare not place any Counter in this Square.</p>
+
+    <p><i>Secondly</i>, what of <b>No. 6</b> ? Here we are a little
+        better off. We <b>know that there is something in it</b>,
+        for there is a <b style="color:green;">green Counter</b> in its outer portion.
+        <i>It is
+        true we do not know whether its inner portion is
+        empty or occupied</i>: <b>but what does that matter ? One
+        solitary Apple, in one corner of the Square, is quite
+        sufficient excuse for saying "this Square is occupied"</b>,
+        and for marking it with a <b style="color:green;">green Counter</b>.</p>
+
+    <p>As to <b>No. 7</b>, we are in the same condition as with
+        <b>No. 5</b>, we find it partly 'empty', but we do not
+        know whether the other part is empty or occupied:
+        <i>so we dare not mark this Square.</i></p>
+
+    <p>And as to <b>No. 8</b>, we have simply no information at all.
+        The result is</p>
+</div>
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path  class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title=""></path>
+
+        <path  class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title="" fill="green"></path>
+
+        <path  class="n7" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path  class="n8" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>Our <b>'Conclusion'</b> then, must be got out of the rather
+        meagre piece of information that there is a <b style="color:green;">green Counter</b>
+        in the <b>x y'</b>-Square. Hence our Conclusion is " some
+        x are y' ", i . e. "some red Apples are unripe (Apples)":
+        or, if you prefer to take y' as your Subject, "some unripe
+        Apples are red (Apples)"; but the other is neatest,
+        I think.</p>
+
+    <p>We will now write out the whole Syllogism, putting
+        <b><i>"therefore"</i></b>, and omitting "Apples",
+        for the sake of brevity, at the end of each Proposition.</p>
+
+    <p class="examples"><b>Some red Apples are unwholesome; <br>
+        No ripe Apples are unwholesome. <br>
+        therefore...Some red Apples are unripe."</b></p>
+
+    <p>And you have now worked out, successfully, your
+        first 'Syllogism'. Permit me to congratulate you, and
+        to express the hope that it is but the beginning of a
+        long and glorious series of similar victories!</p>
+
+    <p style="color:DodgerBlue;"><b>We will work out one other Syllogism a rather
+        harder one than the last and then, I think, you may
+        be safely left to play the Game by yourself, or (better)
+        with any friend whom you can find, that is able and
+        willing to take a share in the sport.</b></p>
+
+    <p>Let us see what we can make of the two Premisses:</p>
+
+    <p class="examples"><b>"All Dragons are uncanny; <br>
+            All Scotchmen are canny."</b></p>
+
+    <p>Remember, I don't guarantee the Premisses to be
+        <b><i>facts</i></b>. In the first place, I never even saw a Dragon :
+        and, in the second place, it isn't of the slightest consequence
+        to us, as <b><i>Logicians</i></b>, whether our Premisses are
+        true or false: all we have to do is to make out
+        whether they lead logically to the Conclusion, so that,
+        if they were true, it would be true also.</p>
+
+    <p>You see, we must give up the "Apples" now, or
+        our cupboards will be of no use to us. We must
+        take, as our <b>'Universe'</b>, some <b>class of things</b> which
+        will include Dragons and Scotchmen: <i style="color:DodgeBlue;">shall we say
+        'Animals' ? And, as "canny" is evidently the Attribute belonging to the 'Middle' Terms, we will let
+        <b>m</b> stand for "canny", <b>x</b> for "Dragons", and <b>y</b> for
+        "Scotchmen.</i> So that our two Premisses are, in full,</p>
+
+    <p class="examples"><b>"All Dragon-Animals are uncanny (Animals); <br>
+        All Scotchman-Animals are canny (Animals)"</b></p>
+
+    <p>And these may be expressed, using letters for words, thus:</p>
+
+    <p class="examples"><b>"All x are m'; <br>
+            All y are m"</b></p>
+
+    <p>The first Premiss consists, as you already know, of two parts:</p>
+
+    <p class="examples"><b>"Some x are m'," <br>
+            and "No x are m."</b></p>
+
+    <p>And the second also consists of two parts:</p>
+
+    <p class="examples"><b>"Some y are m," <br>
+            and "No y are m'."</b></p>
+
+    <p style="color:DodgerBlue;">Let us take the negative portions first.</p>
+
+    <p>We have, then, to mark, on the larger Diagram, first,
+        " no x are m ", and secondly, " no y are m' ". I think
+        you will see, without further explanation, that the
+        two results, separately, are</p>
+</div>
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" ></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="blue"></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" ></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="blue"></path>
+
+        <path  class="n15" d="M  2  154
+                h  75
+                v  75
+                h  75
+                v  75
+                h  -150
+                Z" ></path>
+
+        <path  class="n13" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path  class="n16" d="M  229  154
+                h  75
+                v  150
+                h  -150
+                v  -75
+                h  75
+                Z" ></path>
+
+        <path  class="n14" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+<br>
+<br>
+<br>
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" fill="blue"></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" ></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+
+        <path  class="n15" d="M  2  154
+                h  75
+                v  75
+                h  75
+                v  75
+                h  -150
+                Z" fill="blue"></path>
+
+        <path  class="n13" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path  class="n16" d="M  229  154
+                h  75
+                v  150
+                h  -150
+                v  -75
+                h  75
+                Z" ></path>
+
+        <path  class="n14" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+<br>
+<br>
+
+<div class="text">
+    <p>and that these two, when combined, give us</p>
+</div>
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" fill="blue"></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="blue"></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" ></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="blue"></path>
+
+        <path  class="n15" d="M  2  154
+                h  75
+                v  75
+                h  75
+                v  75
+                h  -150
+                Z" fill="blue"></path>
+
+        <path  class="n13" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path  class="n16" d="M  229  154
+                h  75
+                v  150
+                h  -150
+                v  -75
+                h  75
+                Z" ></path>
+
+        <path  class="n14" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+<br>
+<br>
+
+<div class="text">
+    <p>We have now to mark the two positive portions,
+        " some x are m' " and " some y are m ".</p>
+
+    <p>The only two compartments, available for Things
+        which are <b>x m'</b>, are <b>No. 9</b> and <b>No. 10</b>. Of these, <b>No. 9</b>
+        is already marked as <i>'empty'</i> ; so our <b style="color:green;">green counter</b>
+        <b><i>must</i></b> go into <b>No. 10</b>.</p>
+
+    <p>Similarly, the only two, available for <b>y m</b>, are <b>No. 11</b>
+        and <b>No. 13</b>. Of these, <b>No. 11</b> is already marked as
+        <i>'empty'</i>; so our <b style="color:green;">green counter</b> must go into <b>No. 13</b>.</p>
+
+    <p>The final result is</p>
+</div>
+
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" fill="blue"></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="blue"></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" fill="green"></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="blue"></path>
+
+        <path  class="n15" d="M  2  154
+                h  75
+                v  75
+                h  75
+                v  75
+                h  -150
+                Z" fill="blue"></path>
+
+        <path  class="n13" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" fill="green"></path>
+
+        <path  class="n16" d="M  229  154
+                h  75
+                v  150
+                h  -150
+                v  -75
+                h  75
+                Z" ></path>
+
+        <path  class="n14" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+<br>
+<br>
+
+<div class="text">
+    <p style="color:DodgeBlue;"><b>And now how much of this information can usefully
+        be <i>transferred</i> to the smaller Diagram ?</b></p>
+
+        <p>Let us take its four compartments, one by one.</p>
+
+        <p>As to <b>No. 5</b> ? This, we see, is wholly 'empty'.
+            (So mark it with a <b style="color:blue;">blue counter</b>.)</p>
+
+        <p>As to <b>No. 6</b> ? This, we see, is 'occupied'. (So
+            mark it with a <b style="color:green;">green counter</b>.)</p>
+
+        <p>As to <b>No. 7</b>? Ditto, ditto.</p>
+
+        <p>As to <b>No. 8</b> ? No information.</p>
+
+        <p>The smaller Diagram is now pretty liberally marked:</p>
+</div>
+
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path  class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title="" fill="blue"></path>
+
+        <path  class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title="" fill="green"></path>
+
+        <path  class="n7" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" fill="green"></path>
+
+        <path  class="n8" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>And now what Conclusion can we read off from this ?
+        Well, it is impossible to pack such abundant information
+        into <b><i>one</i></b> Proposition: we shall have to indulge in <b><i>two</i></b>,
+        this time.</p>
+
+        <p><b>First</b>, by taking x as Subject, we get " all x are y' ">
+        that is,</p>
+
+        <p class="examples"><b>"All Dragons are not-Scotchmen":</b></p>
+
+        <p><b>secondly</b>, by taking y as Subject, we get " all y are x' "
+        that is,</p>
+
+        <p class="examples"><b>"All Scotchmen are not-Dragons</b></p>
+
+        <p style="color:DodgerBlue;">>Let us now write out, all together, our two Premisses
+        and our brace of Conclusions.</p>
+
+        <p class="examples"><b>"All Dragons are uncanny; <br>
+                  All Scotchmen are canny,</b></p>
+
+        <p class="examples"><b>therefore...All Dragons are not-Scotchmen;<br>
+                         All Scotchmen are not-Dragons."</b></p>
+
+        <p>Let me mention, in conclusion, that you may perhaps
+            meet with logical treatises in which it is not assumed
+            that any Thing <b><i>exists</i></b> at all, but " some x are y" is
+            understood to mean "the Attributes x, y are <b><i>compatible</i></b>,
+            so that a Thing can have both at once", and "no x
+            are y" to mean "the Attributes x, y are <b><i>incompatible</i></b>,
+            so that nothing can have both at once".</p>
+
+        <p>In such treatises, Propositions have quite different
+            meanings from what they have in our 'Game of
+            Logic' and it will be well to understand exactly what
+            the difference is.</p>
+
+        <p><b>First</b> take "some x are y" . Here <b><i>we</i></b> understand
+            <b><i>"are"</i></b> to mean "are, as an actual <i>fact</i>" which
+            of course implies that some <b>x</b>-Things exist. But <b><i>they</i></b>
+            (the writers of these other treatises) only understand
+            <b><i>"are"</i></b> to mean <b><i>"can be"</i></b> which does not at all
+            imply that any <b><i>exist</i></b>. So they mean <b><i>less</i></b> than we do:
+            our meaning includes theirs (for of course "some x are
+            y" includes "some x can be y"), but theirs does <b><i>not</i></b>
+            include ours. <b>For example</b>, "some Welsh hippopotami
+            are heavy" would be <b><i>true</i></b>, according to these writers (since
+            the Attributes "Welsh" and "heavy" are quite <b><i>compatible</i></b>
+            in a hippopotamus), but it would be <b><i>false</i></b> in our
+            Game (since there are no Welsh hippopotami to <b><i>be</i></b> heavy).</p>
+
+        <p><b>Secondly</b>, take "no x are y". Here <b><i>we</i></b> only understand
+            <b><i>"are"</i></b> to mean "are, as an actual <i>fact</i>"
+            which does not at all imply that they <b><i>cannot be</i></b> y.
+            But <b><i>they</i></b> understand the Proposition to mean, not
+            only that none <b><i>are y</i></b>, but that none can <b><i>possibly be
+            y</i></b>. So they mean <b><i>more</i></b> than we do: their meaning
+            includes ours (for of course " no x can be y" includes
+            " no x are y "), but ours does <b><i>not</i></b> include theirs. <b>For
+            example</b>, "no Policemen are eight feet high" would
+            be <b><i>true</i></b> in our Game (since, as an actual fact, no such
+            splendid specimens can be found), but it would be
+            <b><i>false</i></b>, according to these writers (since the Attributes
+            "belonging to the Police Force" and "eight feet
+            high" are quite <b><i>compatible</i></b>: there is nothing to <b><i>prevent</i></b>
+            a Policeman from growing to that height, if
+            sufficiently rubbed with Rowland's Macassar Oil
+            which is said to make hair grow, when rubbed on
+            hair, and so of course will make a Policeman grow,
+            when rubbed on a Policeman).</p>
+
+            <p><b>Thirdly</b>, take " all x are y ", which consists of the
+                two partial Propositions " some x are y " and " no
+                x are y' ". Here, of course, the treatises mean <b><i>less</i></b>
+                than we do in the <b><i>first</i></b> part, and <b><i>more</i></b> than we do
+                in the <b><i>second</i></b>. But the two operations don't balance
+                each other any more than you can console a man,
+                for having knocked down one of his chimneys, by
+                giving him an extra door-step.</p>
+
+            <p>If you meet with Syllogisms of this kind, you may
+                work them, quite easily, by the system I have given
+                you : you have only to make 'are' mean 'are <b><i>capable</i></b>
+                of being', and all will go smoothly. For "some x
+                are y" will become "some <b>x</b>-Things are capable of
+                being <b>y</b>-(Things)", that is, "the Attributes x, y are
+                <b><i>compatible</i></b>". And " no x are y" will become "no
+                <b>x</b>-Things are capable of being <b>y</b>-(Things)", that is,
+                "the Attributes x, y are incompatible". And, of
+                course, "all x are y" will become "some <b>x</b>-Things
+                are capable of being <b>y</b>-(Things), and none are capable
+                of being <b>y'</b>-(Things)", that is, "the Attributes x, y
+                are <b><i>compatible</i></b>, and x, y' are <b><i>incompatible</i></b>" In using
+                the Diagrams for this system, you must understand a
+                <b style="color:green">green counter</b> to mean "there may <b><i>possibly</i></b> be something
+                in this compartment,"and a <b style="color:blue">blue counter</b> one to mean "there
+                <b><i>cannot possibly</i></b> be anything in this compartment."</p>
+</div>
+
+{% endblock %}

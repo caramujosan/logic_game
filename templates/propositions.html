@@ -1,0 +1,1327 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Propositions
+{% endblock %}
+
+{% block main %}
+
+<h3>Propositions</h3>
+
+<h4 style="color: green">GREEN -> One or More</h4>
+<h4 style="color: blue">BLUE -> Empty</h4>
+<h4 style="color: yellow">YELLOW -> division-line</h4>
+<h4 style="color: #DDD">GREY -> not marked</h4>
+
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" ></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" ></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+
+        <path  class="n15" d="M  2  154
+                h  75
+                v  75
+                h  75
+                v  75
+                h  -150
+                Z" ></path>
+
+        <path  class="n13" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path  class="n16" d="M  229  154
+                h  75
+                v  150
+                h  -150
+                v  -75
+                h  75
+                Z" ></path>
+
+        <path  class="n14" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+
+    <!-- smaller diagram -->
+    <svg width="306" height="306">
+        <path  class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title=""></path>
+
+        <path  class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title=""></path>
+
+        <path  class="n7" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path  class="n8" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+<br>
+<br>
+
+<strong>
+    <p font-size="140.5%">" Some red Apples are ripe."</p>
+    <p font-size="140.5%">" No red Apples are ripe."</p>
+    <p font-size="140.5%">" All red Apples are ripe."</p>
+</strong>
+
+<div class="text">
+    <p>There are three <mark><strong>'Propositions'</strong></mark> for you the only three kinds we are going to use in this Game:
+    and the first thing to be done is to learn how to express them on the Board. </p>
+
+<br>
+
+    <p>Let us begin with <em>"Some red Apples are ripe."</em></p>
+
+<br>
+
+    <p>But, before doing so, a remark has to be made one that is rather important, and by no means easy
+    to understand all in a moment: so please to read this very carefully.</p>
+
+    <p>The world contains many <mark><strong>Things</strong></mark> (such as "Buns", "Babies", "Beetles", "Battledores", &c.);
+    and these
+    Things possess many <mark><strong>Attributes</strong></mark> (such as "baked", "beautiful", "black", "broken",
+    &c: in fact, what
+    ever can be <em>"attributed to"</em>, that is <em>"said to belong to"</em>, any Thing, is an Attribute). Whenever we
+    wish to mention a Thing, we use a <mark><strong>Substantive</strong></mark>: when we wish to mention an
+    Attribute, we use an <mark><strong>Adjective</strong></mark>.
+    People have asked the question "Can a Thing exist without any Attributes belonging to it ?"It is a
+    very puzzling question, and I'm not going to try to answer it: let us turn up our noses, and treat it with
+    contemptuous silence, as if it really wasn't worth noticing. But, if they put it the other way, and ask
+    "Can an Attribute exist without any Thing for it to belong to ?", we may say at once "No: no more than
+    a Baby could go a railway-journey with no one to take care of it!" You never saw "beautiful" floating
+    about in the air, or littered about on the floor, without any Thing to be beautiful, now did you ? </p>
+
+    <p>And now what am I driving at, in all this long rigmarole? It is this. You may put <mark>"is"</mark> or <mark>"are"</mark>
+    between the names of two Things (<b>for example</b>, "some Pigs are fat Animals"), or between the names
+    of two Attributes (<b>for example</b>, "pink is light-red"), and in each case it will make good sense.
+    But, if you put <mark>"is"</mark> or <mark>"are"</mark> between the name of a Thing and the name of an Attribute
+    (<b>for example</b>, "some Pigs are pink"), you do not make good sense (<em>for how can a Thing be an Attribute ?</em>)
+    unless you have an understanding with the person to whom you are speaking. <strong>And the simplest understanding
+    would, I think, be this</strong> <em>that the Substantive shall be supposed to be repeated at the end of the sentence,
+    so that the sentence, if written out in full, would be "some Pigs are pink (Pigs)"</em>. And now the word "are"
+    makes quite good sense.</p>
+
+    <p>Thus, in order to make good sense of the Proposition "some red Apples are ripe", we must suppose it to
+    be written out in full, in the form "some red Apples are ripe (Apples)". Now this contains <strong>two 'Terms'</strong>
+    "red Apples" being one of them, and "ripe (Apples)" the other. " Red Apples," being the one we are
+    talking about, is called the <mark><strong>'Subject'</strong></mark> of the Proposition, and "ripe (Apples)"
+    the <mark><strong>'Predicate'</mark></strong>. Also
+    this Proposition is said to be a <mark><strong>'Particular'</strong></mark> one, since it does not speak
+    of the whole of its Subject,
+    but only of a part of it. The other two kinds are said to be <mark><strong>'Universal'</strong></mark>
+    because they speak of the
+    whole of their Subjects the one denying ripeness, and the other asserting it, of the whole class of
+    "red Apples". Lastly, <mark>if you would like to have a definition of the word 'Proposition' itself, you
+    may take this: — "a sentence stating that some, or none, or all, of the Things belonging to a certain
+    class, called its 'Subject', are also Things belonging to a certain other class, called
+    its 'Predicate'."<mark></p>
+
+    <p><i><b>Now please to look at the smaller Diagram on the Board, and suppose it to be a cupboard,
+    intended for all the Apples in the world (it would have to be a good large one, of course).
+    And let us suppose all the red ones to be put into the upper half ( marked x ), and all the
+    rest (that is, the not-red ones) into the lower half ( marked x' ). Thus the lower half would
+    contain yellow Apples, blue Apples, mauve-coloured Apples if there are any: I haven't seen many,
+    myself and so on. Let us also suppose all the ripe Apples to be put into the left-hand half
+    ( marked y ), and all the rest (that is, the unripe ones) into the right-hand half ( marked y' ).
+    At present, then, we must understand x to mean "red", x' "not-red", y "ripe", and y' "unripe".</b></i></p>
+
+    <br>
+
+    <p style="color:DodgerBlue;"><strong>And now what kind of Apples would you expect to find in compartment No. 5?</strong></p>
+
+    <br>
+
+    <p>It is part of the upper half, you see; so that, if it has any Apples in it, they must be red: and it is part
+    of the left-hand half; so that they must be ripe. Hence, if there are any Apples in this compartment, they must
+    have the double Attribute' "red and ripe": or, if we use letters, they must be <b>( x / y )</b>.</p>
+
+    <p>Take No. 7, for instance. If there are any Apples there, they must be <b>( x' / y )</b>, that is, they must be
+    "not-red and ripe".</p>
+
+    <p>Now let us make another agreement that a <b style="color:green;">GREEN</b> compartment
+    (the compartment pressed when <b style="color:green;">ONE OR MORE</b> is activated) in
+    a compartment shall mean that it is 'occupied', that is, that there are some Apples in it.</p>
+
+    <p>(The word <strong style="color:green;">'some'</strong> in Logic, means <strong style="color:green;">'ONE OR MORE'</strong>: so that
+    a single Apple in a
+    compartment would be quite enough reason for saying <b>"there are some Apples here"</b>). Also let us agree that a
+    <b style="color:blue;">BLUE</b>
+    compartment (the compartment pressed when <b style="color:blue;">EMPTY</b> is activated) shall mean that it is empty, that is, that
+    there are no Apples in it.</p>
+
+    <p>As the Subject of our Proposition is to be "red Apples", we are only concerned, at present, with the upper
+    half of the cupboard, where all the Apples have the attribute <b>x</b>, that is, <b>"red."</b></p>
+
+    <p>Now, fixing our attention on this upper half, suppose we found it marked like this,</p>
+
+
+</div>
+
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path  class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title="" fill="green"></path>
+
+        <path  class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title=""></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>that is, with a <b style="color:green;">green counter</b> in <b>No. 5</b>. What would this tell us, with
+    regard to the class of "red Apples"?</p>
+
+    <p>Would it not tell us that there are some of them in the <b>x y</b>-compartment ? That is, that some of them
+    <i>(besides having the Attribute x, which belongs to both compartments) have the Attribute y (that is, "ripe").</i>
+    This we might express by saying " some x-Apples are y-(Apples)", or, putting words instead of letters, </p>
+
+    <br>
+
+    <p class="examples"><b>"Some red Apples are ripe (Apples)", <br>
+        or, in a shorter form,  <br>
+            "Some red Apples are ripe".</b></p>
+
+    <br>
+
+    <p><i>At last we have found out how to represent the first Proposition of this Section. If you have not
+    clearly understood all I have said, go no further, but read it over and over again, till you do understand
+    it. After that is once mastered, you will find all the rest quite easy.</i></p>
+
+    <p>It will save a little trouble, in doing the other Propositions, if we agree to leave out the word
+    "Apples" altogether. I find it convenient to call the whole class of Things, for which the cupboard is
+    intended, the <strong>'Universe'</strong> Thus we might have begun this business by
+    saying "Let us take a Universe of Apples." (Sounds nice, doesn't it?)</p>
+
+    <p>Of course any other Things would have done just as well as Apples. We might make Propositions about
+    <strong>"a Universe of Lizards "</strong>, or even "a Universe of Hornets". (Wouldn't that be a charming
+    Universe to live in?) </p>
+
+    <p>So far, then, we have learned that</p>
+
+</div>
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path  class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title="" fill="green"></path>
+
+        <path  class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title=""></path>
+    </svg>
+</div>
+
+
+<div class="text">
+   <p>means " some x are y,", that is, "some red are ripe."</p>
+
+   <p>I think you will see, without further explanation, that</p>
+
+</div>
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path  class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title=""></path>
+
+        <path  class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title="" fill="green"></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>means " some x are y' " i. e. "some red are unripe."</p>
+
+    <p>Now let us put a <b style="color:blue;">blue counter</b> into <b>No. 5</b>, and ask
+    ourselves the meaning of </p>
+
+</div>
+
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path  class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title="" fill="blue"></path>
+
+        <path  class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title=""></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>This tells us that the  <b>x y</b>-compartment is empty, which we may express by " no x are y ", or,
+    "no red are ripe". This is the second of the three Propositions at the head of this Section.</p>
+
+    <p>In the same way,</p>
+
+</div>
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="206">
+        <path class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title=""></path>
+
+        <path class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title="" fill="blue"></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>would mean "no x are y' " or, "no red are unripe." </p>
+
+    <p>What would you make of this, I wonder ?</p>
+</div>
+
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="206">
+        <path class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title="" fill="green"></path>
+
+        <path class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title="" fill="green"></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>I hope you will not have much trouble in making out that this represents a
+    <b><i>double</i> Proposition</b>: namely, "some x are y, and some x are y'," that is, "some red are
+        ripe, and some are unripe."</p>
+
+        <p>The following is a little harder, perhaps:</p>
+</div>
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="206">
+        <path class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title="" fill="blue"></path>
+
+        <path class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title="" fill="blue"></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>This means "no x are y, and none are y' ", that is, no
+        red are ripe, and none are unripe" : which leads to the
+        rather curious result that <b>"no red exist at all"</b> This
+        follows from the fact that "ripe" and "not ripe"
+        make what we call an <b style="color:red;"><i>"exhaustive"</i> division</b> of the class
+        "red Apples": i . e., between them, they exhaust the
+        whole class, so that all the red Apples, that exist, must
+        be found in one or the other of them.</p>
+
+        <p>And now suppose I were to ask you to represent,
+            with counters, the contradictory to "no red exist at
+            all" , that is, "some red exist", or, putting letters
+            for words, "some x exist", how would you do it?</p>
+
+        <p>This will puzzle you a little, I expect. Evidently
+            you must put a counter <b><i>somewhere</i></b> in the <b>x-half</b>
+            of the cupboard, since you know there are some red
+            Apples.
+            You must not put it into the left-hand
+            compartment, for example, since you do not know the Apples to be ripe:
+            nor may you put into the right-hand one, since you
+            do not know them to be unripe.</p>
+
+            <p>What, then, are you to do? I think the best way
+                out of the difficulty is to place <b style="color:red;"><i>a yellow counter in two places of
+            the board,</i></b>  the
+            <b>xy</b>-compartment and the
+                <b>xy'</b>-compartment (<b style="color:yellow;">Yellow</b> will never come alone on the board).
+                This I shall represent by the
+                diagram
+</div>
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title="" fill="yellow"></path>
+
+        <path class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title="" fill="yellow"></path>
+
+        <path class="n7" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path class="n8" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>Our ingenious American cousins have invented a
+    phrase to express the position of a man who wants to
+    join one or other of two parties such as their two
+    parties 'Democrats' and 'Republicans' but can't
+    make up his mind which. Such a man is said to be
+    "sitting on the fence." Now that is exactly the position
+    of the yellow counter you have just placed on the division-line.
+    He likes the look of <b>No. 5</b>, and he likes the
+    look of <b>No. 6</b>, and he doesn't know which to jump
+    down into. So there he sits astride, silly fellow,
+    dangling his legs, one on each side of the fence !</p>
+
+    <p>Now I am going to give you a much harder one to
+        make out. What does this mean ?</p>
+</div>
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title="" fill="green"></path>
+
+        <path class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title="" fill="blue"></path>
+
+        <path class="n7" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path class="n8" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>This is clearly a double Proposition. It tells us,
+    not only that "some x are y,"but also that "no x
+    are not y." Hence the result is " all x are y," i . e.
+    "all red are ripe", which is the last of the three
+    Propositions at the head of this Section.</p>
+
+    <p>We see, then, that the Universal Proposition
+    "All red Apples are ripe "
+    consists of two Propositions taken together, namely,
+    "Some red Apples are ripe,"
+    and "No red Apples are unripe."</p>
+
+    <p>In the same way</p>
+</div>
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title="" fill="blue"></path>
+
+        <path class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title="" fill="green"></path>
+
+        <path class="n7" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path class="n8" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>would mean " all x are y' ", that is,
+    "All red Apples are unripe."</p>
+
+    <p>Now what would you make of such a Proposition
+    as "The Apple you have given me is ripe" ? Is it
+    Particular, or Universal ?</p>
+
+    <p>"Particular, of course," you readily reply. "One
+    single Apple is hardly worth calling 'some,' even."</p>
+
+    <p>No, my dear impulsive Reader, it is <b style="color:red;">'Universal'</b>.
+    Remember that, few as they are (and I grant you they
+    couldn't well be fewer), they are (or rather 'it is')
+    all that you have given me! Thus, if (leaving 'red'
+    out of the question) I divide my Universe of Apples
+    into two classes: the Apples you have given me (to
+    which I assign the upper half of the cupboard), and
+    those you haven't given me (which are to go below)
+    I find the lower half fairly full, and the upper one
+    as nearly as possible empty. And then, when I am
+    told to put an upright division into each half, keeping
+    the ripe Apples to the left, and the unripe ones to
+    the right, I begin by carefully collecting all the Apples
+    you have given me (saying to myself, from time to
+    time, "Generous creature! How shall I ever repay
+    such kindness?"), and piling them up in the left-hand
+    compartment. <i>And it doesn't take long to do it!</i></p>
+
+    <p>Here is another Universal Proposition for you. "Barzillai
+    Beckalegg is an honest man." That means "All
+    the Barzillai Beckaleggs, that I am now considering,
+    are honest men." (You think I invented that name,
+    now don't you? But I didn't. It's on a carrier's
+    cart, somewhere down in Cornwall.)</p>
+
+    <p>This kind of Universal Proposition (where the Subject
+    is one single thing) is sometimes called an <b style="color:red;">"Individual"</b>
+    Proposition.</p>
+
+    <p>Now let us take "ripe Apples" as the Subject of
+    our Proposition: that is, let us fix our thoughts on
+    the left-hand half of the cupboard, where all the
+    Apples have the attribute y, that is, "ripe".</p>
+
+    <p>Suppose we find it marked like this:</p>
+</div>
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title="" fill="green"></path>
+
+
+
+        <path class="n7" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>What would that tell us ?</p>
+
+    <p>I hope that it is not necessary, after explaining the
+    <i>horizontal</i> oblong so fully, to spend much time over
+    the <i>upright</i> one. I hope you will see, for yourself,
+    that this means "some y are x", that is,</p>
+
+    <p class="examples"><b>"Some ripe Apples are red."</b></p>
+
+    <p>But,"you will say, "we have had this case before.
+    You put a <b style="color:green;">green counter</b> into <b>No. 5</b>, and you told us it meant
+    'some red Apples are ripe'; and <i>now</i> you tell us that it
+    means 'some <i>ripe</i> Apples are <i>red</i>'! Can it mean both ?"</p>
+
+    <p>The question is a very thoughtful one, and does you
+    <i>great</i> credit, dear Reader! It <i>does</i> mean both. If you
+    choose to take <b>x</b> (that is, "red Apples") as your Subject,
+    and to regard <b>No. 5</b> as part of a <i>horizontal</i> oblong, you
+    may read it "some x are y", that is, "some red Apples
+    are ripe" : but, if you choose to take <b>y</b> (that is, "ripe
+    Apples") as your Subject, and to regard <b>No. 5</b> as part of
+    an <i>upright</i> oblong, then you may read it "some y are x",
+    that is, "some ripe Apples are red". They are merely
+    two different ways of expressing the very same truth.</p>
+
+    <p style="color:DodgerBlue;"><b>And now I think we have said all we need to say
+    about the <i>smaller Diagram</i>, and may go on to <i>the
+    larger one.</i></b></p>
+
+    <p>This may be taken to be a cupboard divided in the
+    same way as the last, but also divided into two portions,
+    for the Attribute <b><i>m</i></b>. Let us give to <b><i>m</i></b> the meaning
+    "wholesome": and let us suppose that all <i>wholesome</i>
+    Apples are placed <b><i>inside</i></b> the central Square, and all
+    the <i>unwholesome</i> ones <b><i>outside</i></b> it, that is, in one or other
+    of the four queer-shaped <b><i>outer</i></b> compartments.</p>
+
+    <p>We see that, just as, in the smaller Diagram, the
+    Apples in each compartment had <i>two</i> Attributes, so,
+    here, the Apples in each compartment have <i>three</i> Attributes: and, just as the letters, representing the two
+    Attributes, appear on the compartment when you place the mouse or click with your finger (if using a mobile device),
+    so, here, they appear at the <i>corners</i>. (Observe
+    that <b><i>m'</i></b> is supposed to be written at each of the four
+    outer corners.) So that we can tell in a moment, by
+    looking at a compartment, what three Attributes belong
+    to the Things in it. For instance, take <b>No. 12</b>. Here we find <b><i>x, y', m,</i></b> at the corners: so we know
+    that the Apples in it , if there are any, have the triple
+    Attribute <b><i>x y' m</i></b>, that is, "red, unripe, and wholesome."
+    Again, take <b>No. 16</b>. Here we find, at the corners,
+    <b><i>x' y' m'</i></b>: so the Apples in it are "not-red, unripe,
+    and unwholesome." (Remarkably untempting Apples !)</p>
+
+    <p><i>It would take far too long to go through all the
+    Propositions, containing <b>x</b> and <b>y</b>, <b>x</b> and <b>m</b>, and <b>y</b> and <b>m</b>,
+    which can be represented on this diagram (there are
+    ninety-six altogether, so I am sure you will excuse
+    me!), and I must content myself with doing two or
+    three, as specimens. You will do well to work out
+    a lot more for yourself.</i></p>
+
+    <p>Taking the upper half by itself, so that our Subject
+    is "red Apples", how are we to represent "no red
+    Apples are wholesome" ?</p>
+
+    <p>This is, writing letters for words, "no x are m." NOW
+    this tells us that none of the Apples, belonging to the upper
+    half of the cupboard, are to be found inside the central
+    Square: that is, the two compartments, <b>No. 11</b> and <b>No. 12</b>,
+    are empty. And this, of course, is represented by</p>
+</div>
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="206">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" ></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="blue"></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" ></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="blue"></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>And now how are we to represent the contradictory
+        Proposition "some x are m" ? This is a difficulty I
+        have already considered. I think the best way is to
+            place a <b style="color:yellow;">yellow counter</b> on the division-line between <b>No. 11</b>
+        and <b>No. 12</b>, and to understand this to mean that one of
+        the two compartments is 'occupied,' but that we do not
+        at present know which. This I shall represent thus:</p>
+</div>
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="206">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" ></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="yellow"></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" ></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="yellow"></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>Now let us express "all x are m"
+    This consists, we know, of two Propositions,</p>
+
+    <p class="examples"><b>" Some x are m," <br>
+    and " No x are m' "</b></p>
+
+    <p><b>Let us express the negative part first</b>. This tells
+        us that none of the Apples, belonging to the upper
+    half of the cupboard, are to be found outside the central
+    Square: that is, the two compartments, <b>No. 9</b> and
+    <b>No. 10</b>, are empty. This, of course, is represented by</p>
+</div>
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="206">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" fill="blue"></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" fill="blue"></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>But we have yet to represent "Some x are m." This
+    tells us that there are some Apples in the oblong consisting
+    of <b>No. 11</b> and <b>No. 12</b>: so we place our <b style="color:yellow;">yellow counter</b>,
+    as in the previous example, on the division-line
+    between <b>No. 11</b> and <b>No. 12</b>, and the result is</p>
+</div>
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="206">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" fill="blue"></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="yellow"></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" fill="blue"></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="yellow"></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>Now let us try one or two interpretations.
+    What are we to make of this, with regard to x and y ?</p>
+</div>
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="206">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" ></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="green"></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" fill="blue"></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="blue"></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>This tells us, with regard to the <b>xy'</b>-Square, that
+    it is wholly 'empty', since <b><i>both</i></b> compartments are so
+    marked. With regard to the <b>xy</b>-Square, it tells us
+    that it is 'occupied'. True, it is only <b><i>one</i></b> compartment
+    of it that is so marked; but that is quite enough,
+    whether the other compartment be 'occupied' or
+    'empty', to settle the fact that there is <b><i>something</i></b> in
+    the Square.</p>
+
+    <p>If, then, we <b style="color:red;"><i>transfer our marks to the smaller Diagram</i></b>,
+    so as to get rid of the <b>m</b>-subdivisions, we have a right
+    to mark it</p>
+</div>
+
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title="" fill="green"></path>
+
+        <path class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title="" fill="blue"></path>
+
+        <path class="n7" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path class="n8" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>which means, you know, "all x are y"</p>
+
+    <p>The result would have been exactly the same, if the
+        given oblong had been marked thus:</p>
+</div>
+
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="206">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" fill="green"></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" fill="blue"></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="blue"></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p style="color:red;"><b>Remenber: when submitting the answer, if the
+    position can be transfered to the smaller diagram, like in the previous case,
+    the answer will be the following (Mark, on a large Diagram, pairs of Premisses,
+        then mark a small Diagram, the results,
+        read off from the small Diagram, are the Conclusions):</b></p>
+</div>
+
+
+ <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" fill="green"></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" fill="blue"></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="blue"></path>
+
+        <path  class="n15" d="M  2  154
+                h  75
+                v  75
+                h  75
+                v  75
+                h  -150
+                Z" ></path>
+
+        <path  class="n13" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path  class="n16" d="M  229  154
+                h  75
+                v  150
+                h  -150
+                v  -75
+                h  75
+                Z" ></path>
+
+        <path  class="n14" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+
+    <!-- smaller diagram -->
+    <svg width="306" height="306">
+        <path  class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title="" fill="green"></path>
+
+        <path  class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title="" fill="blue"></path>
+
+        <path  class="n7" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path  class="n8" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+<br>
+<br>
+
+<div class="text">
+    <p>Once more: how shall we interpret this, with regard
+    to <b>x</b> and <b>y</b> ?</p>
+</div>
+
+
+<!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="206">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" fill="blue"></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" fill="green"></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>This tells us, as to the <b>x y</b>-Square, that one of its
+    compartments is 'empty'. But this information is
+    quite useless, as there is no mark in the other compartment.
+    If the other compartment happened to be
+    'empty' too, the Square would be 'empty': and, if it
+    happened to be 'occupied', the Square would be
+    'occupied'. So, as we do not know which is the case,
+    we can say nothing about this Square.</p>
+
+    <p>The other Square, the <b>x y'</b>-Square, we know (as in
+        the previous example) to be 'occupied'.</p>
+
+    <p>If, then, we transfer our marks to the smaller Diagram,
+        we get merely this :</p>
+</div>
+
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title="" ></path>
+
+        <path class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title="" fill="green"></path>
+
+        <path class="n7" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path class="n8" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>which means, you know, "some x are y'."</p>
+
+    <p>These principles may be applied to all the other
+        oblongs. For instance, to represent
+        " all y' are m' " we should mark the
+        right-hand upright oblong (the one that
+        has the attribute y) thus:</p>
+</div>
+
+
+<!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" fill="yellow"></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" fill="blue"></path>
+
+        <path  class="n16" d="M  229  154
+                h  75
+                v  150
+                h  -150
+                v  -75
+                h  75
+                Z" fill="yellow"></path>
+
+        <path  class="n14" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" fill="blue"></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p>and, if we were told to interpret the lower half of the
+    cupboard, marked as follows, with regard to <b>x</b> and <b>y</b>,</p>
+</div>
+
+
+<!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+
+        <path  class="n9" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" ></path>
+        <path  class="n11" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+        <path  class="n10" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" ></path>
+        <path  class="n12" d="M  154  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+
+        <path  class="n15" d="M  2  154
+                h  75
+                v  75
+                h  75
+                v  75
+                h  -150
+                Z" fill="green"></path>
+
+        <path  class="n13" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path  class="n16" d="M  229  154
+                h  75
+                v  150
+                h  -150
+                v  -75
+                h  75
+                Z" fill="blue"></path>
+
+        <path  class="n14" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" fill="blue"></path>
+    </svg>
+</div>
+
+<br>
+<br>
+
+<div class="text">
+    <p style="color:red;"><b><i>we should transfer it to the smaller Diagram thus,</i></b></p>
+</div>
+
+
+<!-- smaller diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+        <path  class="n5" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title=""></path>
+
+        <path  class="n6" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title=""></path>
+
+        <path  class="n7" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" fill="green"></path>
+
+        <path  class="n8" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" fill="blue"></path>
+    </svg>
+</div>
+
+
+<div class="text">
+    <p><i>One more remark about Propositions should be made.
+    When they begin with <b style="color:red;">"some"</b> or <b style="color:red;">"no"</b>, and contain
+    more than <b style="color:red;">two Attributes</b>, these Attributes may be
+    <b style="color:red;">re-arranged</b>, and <b>shifted</b> from <b>one Term to the other</b>,
+    ad libitum. <b style="color:red;">For example</b>, "some abc are def" may be
+    re-arranged as "some bf are acde" each being equivalent
+    to "some abedef exist". Again, "No wise old
+    men are rash and reckless gamblers " may be re-arranged
+    as "No rash old gamblers are wise and reckless."</i></p>
+</div>
+
+{% endblock %}

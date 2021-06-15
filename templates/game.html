@@ -1,0 +1,134 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    The Game
+{% endblock %}
+
+{% block main %}
+
+<p><span style="color: green">GREEN -> One or More </span><span style="color: blue"> BLUE -> Empty </span></p>
+<p><span style="color: #FFD700"> YELLOW -> division-line </span>
+<span style="color: #DDD"> GREY -> not marked</span></p>
+
+<br>
+<br>
+
+    <!-- bigger diagram -->
+<div class="svg-container">
+    <svg width="306" height="306">
+
+        <path class="diagram" id="upper_left" d="M   2   2
+            h  150
+            v   75
+            h   -75
+            v   75
+            h   -75
+            Z" ></path>
+
+        <path class="diagram" id="upper_mid_left" d="M  79  79
+            h  73
+            v  73
+            h  -73
+            Z" ></path>
+
+        <path class="diagram" id="upper_right" d="M  154  2
+            h  150
+            v  150
+            h  -75
+            v  -75
+            h  -75
+            Z" ></path>
+
+        <path class="diagram" id="upper_mid_right" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path class="diagram" id="lower_left" d="M  2  154
+                h  75
+                v  75
+                h  75
+                v  75
+                h  -150
+                Z" ></path>
+
+        <path class="diagram" id="lower_mid_left" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path class="diagram" id="lower_right" d="M  229  154
+                h  75
+                v  150
+                h  -150
+                v  -75
+                h  75
+                Z" ></path>
+
+        <path class="diagram" id="lower_mid_right" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+
+<!-- smaller diagram -->
+    <svg width="306" height="306">
+        <path class="diagram" id="upper_left_small" d="M  79  79
+                h  73
+                v  73
+                h  -73
+                Z" data-original-title="" title=""></path>
+
+        <path class="diagram" id="upper_right_small" d="M  154  79
+                h  73
+                v  73
+                h  -73
+                Z"  data-original-title="" title=""></path>
+
+        <path class="diagram" id="lower_left_small" d="M  79  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+
+        <path class="diagram" id="lower_right_small" d="M  154  154
+                h  73
+                v  73
+                h  -73
+                Z" ></path>
+    </svg>
+</div>
+
+<br>
+<br>
+
+
+<form id="logic_problem"></form>
+        <div class="form-group">
+            <select id="problem_list" class="form-control" name="sylogisms">
+                <option disabled selected value="">Logic Sylogisms</option>
+                {% for problem in problems %}
+                    <option value="{{ problem.first_premise }}">{{ problem.first_premise }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button id="problemo" class="btn btn-primary" type="button">Answer</button>
+</form>
+
+<hr>
+
+<p id="premise"></p>
+
+<p id="premise2"></p>
+
+<strong><p id="answer" style="color:red;"></p></strong>
+
+<strong><p id="answer2" style="color:red;"></p></strong>
+
+<hr>
+
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+
+    <form action="/login" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="usermail" placeholder="Email" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Log In</button>
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+    <b><p class="log_warning">{{ logged_out[0] }}</p></b>
+    <p class="log_warning">{{ logged_out[1] }}</p>
+    <p class="log_warning">{{ logged_out[2] }}</p>
+
+{% endblock %}

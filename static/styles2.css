@@ -1,0 +1,114 @@
+/* making the page responsive */
+body
+{
+  max-width:100%;
+  font-size: 100%;
+}
+
+
+*
+{
+  box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 320px) {
+  /* For mobile phones: */
+  .text{color:purple;}
+  .svg-container{margin-left:-17%;}
+  .svg-container{margin-bottom:-5%;}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  
+  h4{font-size: 85%;}
+  h4{text-align: left;}
+  h4{margin-bottom: 5px;}
+  main .form-control{max-width:100%;}
+}
+
+@media only screen and (min-width: 1024px) {
+  /* For tablets: */
+  .text{margin-right: 135px;}
+  .text{margin-left: 135px;}
+}
+
+@media only screen and (min-width: 1366px) {
+  /* For desktop: */
+  .text{margin-right: 245px;}
+  .text{margin-left: 245px;}
+}
+
+
+
+/* Game page */
+
+svg
+{
+    width:  auto;
+    height: auto;
+    fill: #DDD;
+}
+
+
+form
+{
+    display: block;
+    margin-top: 2em;
+}
+
+
+.modal-body
+{
+    text-shadow: 2px 2px 5px red;
+    font-weight: bold;
+    font-size: 140.5%;
+}
+
+
+/* Tutorials page */
+
+h3
+{
+    font-family: Arial;
+    margin-bottom: 20px;
+}
+
+h4
+{
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+
+.text
+{
+    text-align: justify;
+}
+
+
+mark
+{
+    color: #FF4433;
+}
+
+
+
+/* Login page */
+
+.log_warning
+{
+    color: #1d2124a8;
+    font-family: Lucida;
+    font-size: 1.275em;
+}
+
+
+.examples
+{
+    text-align: center;
+}
+
+
+
