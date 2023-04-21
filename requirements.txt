@@ -9,6 +9,6 @@ itsdangerous==2.0.1
 Jinja2==3.0.1
 MarkupSafe==2.0.1
 SQLAlchemy==1.4.18
-sqlparse==0.4.2
+sqlparse==0.4.4
 termcolor==1.1.0
 Werkzeug==2.0.1
