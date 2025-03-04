@@ -12,6 +12,8 @@ from helpers import apology, login_required
 # Regular expression email format
 regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
 
+
+print("Iniciating Flask application...")
 # Configure application
 app = Flask(__name__)
 
@@ -39,6 +41,7 @@ Session(app)
 db = SQL("sqlite:///logic.db")
 
 
+print("Routes defined.")
 @app.route("/")
 @login_required
 def index():
@@ -292,6 +295,7 @@ def changepassword():
         return render_template("changepassword.html")
 
 
+
 def errorhandler(e):
     """Handle error"""
     if not isinstance(e, HTTPException):
@@ -304,3 +308,6 @@ for code in default_exceptions:
     app.errorhandler(code)(errorhandler)
 
 
+if __name__ == "__main__":
+    print("Executando o servidor Flask...")
+    app.run(debug=True)

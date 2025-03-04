@@ -8,6 +8,7 @@ gunicorn==20.1.0
 itsdangerous==2.0.1
 Jinja2==3.0.1
 MarkupSafe==2.0.1
+requests
 SQLAlchemy==1.4.18
 sqlparse==0.4.2
 termcolor==1.1.0
