@@ -1,6 +1,6 @@
 # Lewis Carroll's Game of Logic
+#### To initialize the app, use the command:
 ```
-To initialize the app, use the command:
 python application.py
 ```
 
