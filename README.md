@@ -1,4 +1,9 @@
 # Lewis Carroll's Game of Logic
+```
+To initialize the app, use the command:
+python application.py
+```
+
 #### Video Demo:  https://www.youtube.com/watch?v=yoTuJWGuTHI
 #### A web application game based on a book about logic of famous writer Lewis Carroll.
 
