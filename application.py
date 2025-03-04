@@ -30,6 +30,12 @@ def after_request(response):
     return response
 
 
+# Obter a SECRET_KEY da variável de ambiente
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
+
+if not app.config["SECRET_KEY"]:
+    raise ValueError("SECRET_KEY não definida na variável de ambiente.")
+
 # Configure session to use filesystem (instead of signed cookies)
 app.config["SESSION_FILE_DIR"] = mkdtemp()
 app.config["SESSION_PERMANENT"] = False
@@ -220,9 +226,8 @@ def register():
             rows = db.execute("SELECT * FROM users WHERE usermail = ?", usermail)
 
             # Check if a username and/or password already exists
-            for row in rows:
-                if len(rows) != 0:
-                    return apology("invalid username and/or password", 400)
+            if len(rows) != 0:
+                return apology("email already registered", 400)
 
             # if not, register user
             else:
@@ -264,7 +269,7 @@ def changepassword():
         elif not request.form.get("confirm"):
             return apology("must confirm new password", 403)
 
-        elif len(password) < 8:
+        elif len(new_passwrod) < 8:
             return apology("password must be at least 8 elements long")
 
         elif new_passwrod != confirm_password:
@@ -275,20 +280,14 @@ def changepassword():
             # Query database for username
             rows = db.execute("SELECT * FROM users WHERE id = ?", session["user_id"])
 
-            # Check if a username and/or password already exists
-            for row in rows:
-                if len(rows) != 1:
-                    return apology("invalid password", 400)
+            # if not, change user password   
+            hash_password = generate_password_hash(new_passwrod, method='pbkdf2:sha256', salt_length=8)
+            db.execute("UPDATE users SET hash=? WHERE id=?", hash_password, session["user_id"])
 
-            # if not, change user password
-            else:
-                hash_password = generate_password_hash(new_passwrod, method='pbkdf2:sha256', salt_length=8)
-                db.execute("UPDATE users SET hash=? WHERE id=?", hash_password, session["user_id"])
+            flash("Password changed")
 
-                flash("Password changed")
-
-                # Redirect user to home page
-                return redirect("/")
+            # Redirect user to home page
+            return redirect("/")
 
     # User reached route via GET (as by clicking a link or via redirect)
     else:
