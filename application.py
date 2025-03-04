@@ -310,4 +310,4 @@ for code in default_exceptions:
 
 if __name__ == "__main__":
     print("Executando o servidor Flask...")
-    app.run(debug=True)
+    app.run()
